@@ -11,6 +11,7 @@ This is where i document progress regarding my homelab.
 - Core ultra 5 225h *(Asus NUC 15 pro)*
 - Crucial 24GB DDR5 5600MHz
 - WD Black 850X 1TB
+- Akasa maxwell RC pro - fanless case designed for TDP of 40W, while cpu actually is 28W, leaving also headroom.
 
 **Router**
 - ASUS BE3600 - *i just needed a router that didnt look like flying saucer*

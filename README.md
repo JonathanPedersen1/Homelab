@@ -9,22 +9,24 @@ This is where i document progress regarding my homelab.
 
 **Workernode:**
 - Core ultra 5 225h *(Asus NUC 15 pro)*
-- Crucial 24GB DDR5 5600MHz
-- WD Black 850X 1TB
+- 2x Crucial 24GB DDR5 5600MHz (48GB)
+- 4TB Kingston KC3000 NVME SSD
 - Akasa maxwell RC pro - fanless case designed for TDP of 40W, while cpu actually is 28W, leaving also headroom.
 
 **Router**
-- ASUS BE3600 - *i just needed a router that didnt look like flying saucer*
-
+- ASUS BE3600
 
 **Switch**
 - Netgear GS305EP, 4 ports PoE+ (30W per port) - as a cluster for learning, i can manage with 4 ports, having 2 leftover.
 
+# OS and other
+- My cluster is running k3s, with k9s as a management tool.
+- Both of my nodes are running Ubuntu Server.
 
-# Software, OS, and more
-Ive chosen K3S as my kubernetes distribution, as i per now only intend to learn things like orchestration, linux, networking etc. I might check out k8s later if i ever see the need.
-Both of my machines are running Ubuntu Server LTS 24.04.3. I spesifically wanted to avoid desktop environments, because it would superfluous for serveruse, and much so for a kubernetes cluster.
-Regarding management, ive chosen Rancher, as it felt natural hence K3S *being* Rancher. Ive looked a tiny bit on Lens, but for now ill stick with Rancher.
+**Services**
+- Grafana with Prometheus
+- Valheim
+And more to come...
 
 # Thoughts
-Ideally, id like to add another node for things like Pi-hole and mediastuff, but thats for another day. I could likely run this on the worker i already have, but that wouldnt be very redundant.
+Id like to run pi-hole too, but havent yet because doing "surgery" on the worker (where it would reside), or doing reboots, will also make my network DNS-less which isnt viable. This project is for another node in the future.
